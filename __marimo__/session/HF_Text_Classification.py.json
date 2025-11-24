@@ -1,0 +1,623 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.7"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "dc6120a54a7e044216ab99d67b6cf023",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u5fc5\u8981\u306a\u30e9\u30a4\u30d6\u30e9\u30ea\u3092\u30a4\u30f3\u30dd\u30fc\u30c8</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "501afdd0bb1fcba9ea840d5b3e462b26",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30c7\u30fc\u30bf\u30bb\u30c3\u30c8\u306e\u53d6\u5f97</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "29c0bf00812c10edd9479f852028a6c1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30c7\u30fc\u30bf\u306e\u524d\u51e6\u7406</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "89ae8d43154bc2c2e5226a9d6d58ddec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u8a55\u4fa1\u6307\u6a19\u306e\u5b9a\u7fa9</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "7e1cd25abf9269d69ec2dce3d5895f4e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30e2\u30c7\u30eb\u306e\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "58aa3f5114a2810b22763b2cfbea3c21",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30e2\u30c7\u30eb\u5185\u306e\u30d1\u30e9\u30e1\u30fc\u30bf\u30fc\u6570</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "ffe53d35088cccb075d7d31e0d7fa754",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30e2\u30c7\u30eb\u3092\u4fdd\u5b58\u3059\u308b\u305f\u3081\u306e\u30d5\u30a9\u30eb\u30c0</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "6590d21e5f526000698571c694434e3a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"_1\">\u30cf\u30a4\u30d1\u30fc\u30d1\u30e9\u30e1\u30fc\u30bf\u306e\u8a2d\u5b9a</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "2dab5cf34ea1993bf753e867813b55ed",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"trainer\">Trainer\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u306e\u4f5c\u6210</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "1945e70c7ad367cbffc074f2e258e846",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "23ea44aa50f56132dfba931cbc24d822",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\n    _|    _|  _|    _|    _|_|_|    _|_|_|  _|_|_|  _|      _|    _|_|_|      _|_|_|_|    _|_|      _|_|_|  _|_|_|_|\n    _|    _|  _|    _|  _|        _|          _|    _|_|    _|  _|            _|        _|    _|  _|        _|\n    _|_|_|_|  _|    _|  _|  _|_|  _|  _|_|    _|    _|  _|  _|  _|  _|_|      _|_|_|    _|_|_|_|  _|        _|_|_|\n    _|    _|  _|    _|  _|    _|  _|    _|    _|    _|    _|_|  _|    _|      _|        _|    _|  _|        _|\n    _|    _|    _|_|      _|_|_|    _|_|_|  _|_|_|  _|      _|    _|_|_|      _|        _|    _|    _|_|_|  _|_|_|_|\n\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.anyenv/envs/pyenv/versions/3.12.6/lib/python3.12/getpass.py:62: GetPassWarning: Can not control echo on the terminal.\n  passwd = fallback_getpass(prompt, stream)\nWarning: Password input may be echoed.\nEnter your token (input will not be visible): ",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Add token as git credential? (Y/n) ",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": " y\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "9b121fc71941630185753a3c4e739808",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DatasetDict({\n    train: Dataset({\n        features: [&#x27;text&#x27;, &#x27;label&#x27;],\n        num_rows: 250\n    })\n})</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rGenerating train split:   0%|                                                | 0/250 [00:00<?, ? examples/s]\rGenerating train split: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 250/250 [00:00<00:00, 40166.09 examples/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "PKri",
+      "code_hash": "4069a65d64a7ea6e668dc51670d6b4a2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='b90c8e56-6eaf-a8c1-b0e9-96afa3fbf817'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;text&#92;&quot;:&#92;&quot;Creamy cauliflower curry with garlic naan, featuring tender cauliflower in a rich sauce with cream and spices, served with garlic naan bread.&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Set of books stacked on a desk&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Watching TV together, a family has their dog stretched out on the floor&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Wooden dresser with a mirror reflecting the room&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Lawn mower stored in a shed&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Coffee table cluttered with magazines&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Pair of reading glasses left open on a book&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Set of muffin tins stacked together&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Set of baking sheets stacked in a cabinet&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;not_food&#92;&quot;},{&#92;&quot;text&#92;&quot;:&#92;&quot;Sushi with unique toppings like seared tuna or eel sauce.&#92;&quot;,&#92;&quot;label&#92;&quot;:&#92;&quot;food&#92;&quot;}]&quot;' data-total-rows='250' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;label&quot;,[&quot;string&quot;,&quot;object&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "dfd7058b39532f5f574c431531488611",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "{0: 'not_food', 1: 'food'}\n{'not_food': 0, 'food': 1}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "c6ef44caeec3940656807447e5079e0f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "76103858c85c2200628ad4ec3897aa3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"text\": [\"Creamy cauliflower curry with garlic naan, featuring tender cauliflower in a rich sauce with cream and spices, served with garlic naan bread.\", \"Set of books stacked on a desk\", \"Watching TV together, a family has their dog stretched out on the floor\", \"Wooden dresser with a mirror reflecting the room\", \"Lawn mower stored in a shed\"], \"label\": [1, 0, 0, 0, 0]}"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:   0%|                                                                   | 0/250 [00:00<?, ? examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 250/250 [00:00<00:00, 18264.37 examples/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "49573795e4cc6c742cc2edc669c7eabc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DatasetDict({\n    train: Dataset({\n        features: [&#x27;text&#x27;, &#x27;label&#x27;],\n        num_rows: 200\n    })\n    test: Dataset({\n        features: [&#x27;text&#x27;, &#x27;label&#x27;],\n        num_rows: 50\n    })\n})</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "74a4737ae8d5d5733fe20055a3faf3f7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DistilBertTokenizerFast(name_or_path=&#x27;distilbert/distilbert-base-uncased&#x27;, vocab_size=30522, model_max_length=512, is_fast=True, padding_side=&#x27;right&#x27;, truncation_side=&#x27;right&#x27;, special_tokens={&#x27;unk_token&#x27;: &#x27;[UNK]&#x27;, &#x27;sep_token&#x27;: &#x27;[SEP]&#x27;, &#x27;pad_token&#x27;: &#x27;[PAD]&#x27;, &#x27;cls_token&#x27;: &#x27;[CLS]&#x27;, &#x27;mask_token&#x27;: &#x27;[MASK]&#x27;}, clean_up_tokenization_spaces=False, added_tokens_decoder={\n\t0: AddedToken(&quot;[PAD]&quot;, rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n\t100: AddedToken(&quot;[UNK]&quot;, rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n\t101: AddedToken(&quot;[CLS]&quot;, rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n\t102: AddedToken(&quot;[SEP]&quot;, rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n\t103: AddedToken(&quot;[MASK]&quot;, rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),\n}\n)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "703dab1c6c13aca5422845fbdcbb0b8f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>{&#x27;input_ids&#x27;: [101, 1045, 2293, 4937, 999, 102], &#x27;attention_mask&#x27;: [1, 1, 1, 1, 1, 1]}</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "3b27de6b1e3c9ee7e3d67d95ef7c14e8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "30522\n512\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "iLit",
+      "code_hash": "2ae35b1ac9ff0b960fbfe347600d1758",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "8e5217adaffb579b912d9d459b946b3c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DatasetDict({\n    train: Dataset({\n        features: [&#x27;text&#x27;, &#x27;label&#x27;, &#x27;input_ids&#x27;, &#x27;attention_mask&#x27;],\n        num_rows: 200\n    })\n    test: Dataset({\n        features: [&#x27;text&#x27;, &#x27;label&#x27;, &#x27;input_ids&#x27;, &#x27;attention_mask&#x27;],\n        num_rows: 50\n    })\n})</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap:   0%|                                                                   | 0/200 [00:00<?, ? examples/s]",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 200/200 [00:00<00:00, 17250.57 examples/s]\n\rMap:   0%|                                                                    | 0/50 [00:00<?, ? examples/s]\rMap: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 50/50 [00:00<00:00, 10727.67 examples/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "583538d341f7daf605bb9db26f829ebf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\rDownloading builder script: 0.00B [00:00, ?B/s]\rDownloading builder script: 4.20kB [00:00, 10.7MB/s]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "787a05f78d6e063a9643ab3bc224cd9e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert/distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']\nYou should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "b62e4b177268677199764e4ca35d55f1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>DistilBertForSequenceClassification(\n  (distilbert): DistilBertModel(\n    (embeddings): Embeddings(\n      (word_embeddings): Embedding(30522, 768, padding_idx=0)\n      (position_embeddings): Embedding(512, 768)\n      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)\n      (dropout): Dropout(p=0.1, inplace=False)\n    )\n    (transformer): Transformer(\n      (layer): ModuleList(\n        (0-5): 6 x TransformerBlock(\n          (attention): DistilBertSdpaAttention(\n            (dropout): Dropout(p=0.1, inplace=False)\n            (q_lin): Linear(in_features=768, out_features=768, bias=True)\n            (k_lin): Linear(in_features=768, out_features=768, bias=True)\n            (v_lin): Linear(in_features=768, out_features=768, bias=True)\n            (out_lin): Linear(in_features=768, out_features=768, bias=True)\n          )\n          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)\n          (ffn): FFN(\n            (dropout): Dropout(p=0.1, inplace=False)\n            (lin1): Linear(in_features=768, out_features=3072, bias=True)\n            (lin2): Linear(in_features=3072, out_features=768, bias=True)\n            (activation): GELUActivation()\n          )\n          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)\n        )\n      )\n    )\n  )\n  (pre_classifier): Linear(in_features=768, out_features=768, bias=True)\n  (classifier): Linear(in_features=768, out_features=2, bias=True)\n  (dropout): Dropout(p=0.2, inplace=False)\n)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "95be72ef0fb02fc9e54f3a81a5673b26",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"trainable_parameters\": 66955010, \"total_parameters\": 66955010}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "55d5ca760990d8996c20cbdc32a5dc8f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>PosixPath(&#x27;models/learn_hf_food_not_food_text_classifier&#x27;)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "b3775c1538dc79a05babb905017adb1c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "[INFO] Saving model checkpoint: models/learn_hf_food_not_food_text_classifier\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "830bbd907c46b4b5c2edfc45da5ba449",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>TrainingArguments(\n_n_gpu=1,\naccelerator_config={&#x27;split_batches&#x27;: False, &#x27;dispatch_batches&#x27;: None, &#x27;even_batches&#x27;: True, &#x27;use_seedable_sampler&#x27;: True, &#x27;non_blocking&#x27;: False, &#x27;gradient_accumulation_kwargs&#x27;: None, &#x27;use_configured_state&#x27;: False},\nadafactor=False,\nadam_beta1=0.9,\nadam_beta2=0.999,\nadam_epsilon=1e-08,\nauto_find_batch_size=False,\naverage_tokens_across_devices=True,\nbatch_eval_metrics=False,\nbf16=False,\nbf16_full_eval=False,\ndata_seed=None,\ndataloader_drop_last=False,\ndataloader_num_workers=0,\ndataloader_persistent_workers=False,\ndataloader_pin_memory=True,\ndataloader_prefetch_factor=None,\nddp_backend=None,\nddp_broadcast_buffers=None,\nddp_bucket_cap_mb=None,\nddp_find_unused_parameters=None,\nddp_timeout=1800,\ndebug=[],\ndeepspeed=None,\ndisable_tqdm=False,\ndo_eval=True,\ndo_predict=False,\ndo_train=False,\neval_accumulation_steps=None,\neval_delay=0,\neval_do_concat_batches=True,\neval_on_start=False,\neval_steps=None,\neval_strategy=IntervalStrategy.EPOCH,\neval_use_gather_object=False,\nfp16=False,\nfp16_backend=auto,\nfp16_full_eval=False,\nfp16_opt_level=O1,\nfsdp=[],\nfsdp_config={&#x27;min_num_params&#x27;: 0, &#x27;xla&#x27;: False, &#x27;xla_fsdp_v2&#x27;: False, &#x27;xla_fsdp_grad_ckpt&#x27;: False},\nfsdp_min_num_params=0,\nfsdp_transformer_layer_cls_to_wrap=None,\nfull_determinism=False,\ngradient_accumulation_steps=1,\ngradient_checkpointing=False,\ngradient_checkpointing_kwargs=None,\ngreater_is_better=False,\ngroup_by_length=False,\nhalf_precision_backend=auto,\nhub_always_push=False,\nhub_model_id=None,\nhub_private_repo=False,\nhub_revision=None,\nhub_strategy=HubStrategy.EVERY_SAVE,\nhub_token=&lt;HUB_TOKEN&gt;,\nignore_data_skip=False,\ninclude_for_metrics=[],\ninclude_inputs_for_metrics=False,\ninclude_num_input_tokens_seen=no,\ninclude_tokens_per_second=False,\njit_mode_eval=False,\nlabel_names=None,\nlabel_smoothing_factor=0.0,\nlearning_rate=0.0001,\nlength_column_name=length,\nliger_kernel_config=None,\nload_best_model_at_end=True,\nlocal_rank=0,\nlog_level=passive,\nlog_level_replica=warning,\nlog_on_each_node=True,\nlogging_dir=models/learn_hf_food_not_food_text_classifier/runs/Nov24_21-38-28_CatInPajamas.local,\nlogging_first_step=False,\nlogging_nan_inf_filter=True,\nlogging_steps=500,\nlogging_strategy=IntervalStrategy.EPOCH,\nlr_scheduler_kwargs={},\nlr_scheduler_type=SchedulerType.LINEAR,\nmax_grad_norm=1.0,\nmax_steps=-1,\nmetric_for_best_model=loss,\nmp_parameters=,\nneftune_noise_alpha=None,\nno_cuda=False,\nnum_train_epochs=10,\noptim=OptimizerNames.ADAMW_TORCH_FUSED,\noptim_args=None,\noptim_target_modules=None,\noutput_dir=models/learn_hf_food_not_food_text_classifier,\noverwrite_output_dir=False,\nparallelism_config=None,\npast_index=-1,\nper_device_eval_batch_size=32,\nper_device_train_batch_size=32,\nprediction_loss_only=False,\nproject=huggingface,\npush_to_hub=False,\npush_to_hub_model_id=None,\npush_to_hub_organization=None,\npush_to_hub_token=&lt;PUSH_TO_HUB_TOKEN&gt;,\nray_scope=last,\nremove_unused_columns=True,\nreport_to=[],\nrestore_callback_states_from_checkpoint=False,\nresume_from_checkpoint=None,\nrun_name=None,\nsave_on_each_node=False,\nsave_only_model=False,\nsave_safetensors=True,\nsave_steps=500,\nsave_strategy=SaveStrategy.EPOCH,\nsave_total_limit=3,\nseed=42,\nskip_memory_metrics=True,\ntf32=None,\ntorch_compile=False,\ntorch_compile_backend=None,\ntorch_compile_mode=None,\ntorch_empty_cache_steps=None,\ntorchdynamo=None,\ntpu_metrics_debug=False,\ntpu_num_cores=None,\ntrackio_space_id=trackio,\nuse_cpu=False,\nuse_legacy_prediction_loop=False,\nuse_liger_kernel=False,\nuse_mps_device=False,\nwarmup_ratio=0.0,\nwarmup_steps=0,\nweight_decay=0.0,\n)</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "383a58a0f1743b58c397dd68d3489453",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>&lt;transformers.trainer.Trainer object at 0x39816fd10&gt;</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/var/folders/fn/kncqgb0s79z0qcxtgyq5z3v80000gn/T/marimo_48661/__marimo__cell_pHFh_.py:3: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.\n  trainer = Trainer(\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "a673cfdf87b26c182c75e6ccba061053",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre style='font-size: 12px'>TrainOutput(global_step=70, training_loss=0.035807903982432825, metrics={&#x27;train_runtime&#x27;: 71.8128, &#x27;train_samples_per_second&#x27;: 27.85, &#x27;train_steps_per_second&#x27;: 0.975, &#x27;total_flos&#x27;: 18110777160000.0, &#x27;train_loss&#x27;: 0.035807903982432825, &#x27;epoch&#x27;: 10.0})</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "aqbW",
+      "code_hash": "4cdd7e8876e20297e08f243894f429e9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"test_loss\": \"text/plain+float:0.0005359761998988688\", \"test_accuracy\": \"text/plain+float:1.0\", \"test_runtime\": \"text/plain+float:0.2584\", \"test_samples_per_second\": \"text/plain+float:193.483\", \"test_steps_per_second\": \"text/plain+float:7.739\"}"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/Users/shodatakumi/.local/share/uv/tools/marimo/lib/python3.12/site-packages/torch/utils/data/dataloader.py:692: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.\n  warnings.warn(warn_msg)\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "[INFO] Prediction metrics on the test data:\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
